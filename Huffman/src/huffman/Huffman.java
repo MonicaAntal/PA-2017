@@ -11,7 +11,7 @@ public class Huffman {
 		H.tree.add(new Nod(1, "c"));
 		H.tree.add(new Nod(4, "b"));
 		H.tree.add(new Nod(2, "a"));
-		H.SiftDown(1);
+		H.SiftDown(1); // asta o comentezi ca sa vezi daca merge percolate
 	}
 
 	
