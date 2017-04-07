@@ -59,7 +59,19 @@ public class Heap{
 	
 	void Percolate(int k){
 		
-		
+		int k = i;
+		int j;
+		do
+		{
+			j=k;
+			if(j>1 && tree.get(j/2).freq < tree.get(k).freq)
+			{
+				k=j/2;
+			}
+			Swap(j,k);
+			
+		}
+		while(j!=k);  //nu cred ca functioneaza chestia asta
 		
 		
 	}
