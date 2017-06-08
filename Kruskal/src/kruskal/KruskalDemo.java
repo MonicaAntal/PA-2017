@@ -50,7 +50,7 @@ public class KruskalDemo {
  		}
  		
 		for(int i=0;i<arbore.size();i++)
-			arbore.get(i).afis();
+			arbore.get(i).Afisare();
 		
 	}
 }
