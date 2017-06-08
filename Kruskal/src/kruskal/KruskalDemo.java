@@ -6,13 +6,13 @@ public class KruskalDemo {
 	public static void main(String[] args) {
 		
 		ArrayList<Muchie> m = new ArrayList<Muchie>(); //creez un sir de muchii si adaug muchii la el
-		m.add(new Muchie(1,2,4));
-		m.add(new Muchie(1,5,1));
-		m.add(new Muchie(1,4,5));
-		m.add(new Muchie(1,4,3));
-		m.add(new Muchie(3,6,2));
-		m.add(new Muchie(2,4,5));
-		m.add(new Muchie(2,5,7));
+		m.add(new Muchie(0,1,1)); 
+		m.add(new Muchie(0,3,4)); 
+		m.add(new Muchie(1,2,2));
+		m.add(new Muchie(4,3,3)); 
+		m.add(new Muchie(3,6,4)); 
+		m.add(new Muchie(1,4,4)); //daca apare=>ciclu=>not ok
+		m.add(new Muchie(5,6,3));
 	
 		
 		//Ordonarea sirului dupa cost
