@@ -1,17 +1,63 @@
 package huffman;
+import java.util.*;
+public class Nod {
 
-import java.util.List;
-
-class Nod {
-	String value; // a,b,c,d,e
-	Integer freq;     // 2,3,4,1,5
-	List<Boolean> code;
+	Nod left;
+	Nod right;
 	
-	public Nod(Integer freq, String value )
+	char valoare;
+	int frecventa;
+	ArrayList<Byte> cod = new ArrayList<Byte>();
+	
+	Nod(char valoare, int frecventa, ArrayList<Byte>cod)
 	{
-		this.freq = freq;
-		this.value = value;
+		this.valoare=valoare;
+		this.frecventa=frecventa;
+		this.cod=cod;
+	}
+
+	public char getValoare() {
+		return valoare;
+	}
+
+	public void setValoare(char valoare) {
+		this.valoare = valoare;
+	}
+
+	public int getFrecventa() {
+		return frecventa;
+	}
+
+	public void setFrecventa(int frecventa) {
+		this.frecventa = frecventa;
+	}
+
+	public ArrayList<Byte> getCod() {
+		return cod;
+	}
+
+	public void setCod(ArrayList<Byte> cod) {
+		this.cod = cod;
+	}
+
+	public Nod getLeft() {
+		return left;
+	}
+
+	public void setLeft(Nod left) {
+		this.left = left;
+	}
+
+	public Nod getRight() {
+		return right;
+	}
+
+	public void setRight(Nod right) {
+		this.right = right;
+	}
+	
+	public String toString()
+	{
+		return "valoare="+valoare+" frecventa="+frecventa+" cod="+cod;
 	}
 }
-
-	
